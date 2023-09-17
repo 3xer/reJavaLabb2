@@ -1,6 +1,6 @@
 package org.example;
 
-abstract class Shape implements Comparable<T>{
+abstract class Shape implements Comparable<Shape>{
     public abstract double getArea();
         //one equation for circle
 
@@ -12,8 +12,8 @@ abstract class Shape implements Comparable<T>{
 
         //one equation for rectangle
 @Override
-    public int compareTo(T other){
-    return double.compare(this.getArea)
+    public int compareTo(Shape other){
+    return Double.compare(this.getArea(), other.getArea());
 }
 
 }
